@@ -29,7 +29,7 @@ mongoose
       app.use("/express", (req, res) => res.send("from express"));
       app.use(
         cors({
-          origin: "http://localhost:3000/graphql",
+          origin: "https://healthcaredemodemo.herokuapp.com/",
         })
       );
       app.listen({port: PORT}, () => {
