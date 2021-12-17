@@ -18,9 +18,7 @@ module.exports = {
       if (!currentUser) {
         throw new Error("User Not Found!");
       }
-      if (currentUser.userType !== "doctor") {
-        throw new AuthenticationError("Only Admin Can Add New Package!");
-      }
+
       const newDiagnosis = await Diagnosis({
         userFullName,
         status,
